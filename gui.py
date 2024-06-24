@@ -1,10 +1,13 @@
 import customtkinter
 from tkintermapview import TkinterMapView
 from PIL import Image, ImageTk
+from datetime import datetime, timedelta
 import os
 import json
 import logger
-import mqtt  # Assuming mqtt.py handles the MQTT connection
+import mqtt  
+import threading
+import time
 
 log = logger.logger
 
@@ -32,7 +35,7 @@ class App(customtkinter.CTk):
         self.bind("<Command-w>", self.on_closing)
         self.createcommand('tk::mac::Quit', self.on_closing)
 
-        self.marker_list = []
+        self.marker_list = {}
 
         # ============ create two CTkFrames ============
 
@@ -65,8 +68,11 @@ class App(customtkinter.CTk):
         #self.drone_icon_path = os.path.join(os.path.dirname(__file__), "images", "online.png")
         #self.drone_icon_image = Image.open(self.drone_icon_path).resize((25, 25))
         
-        self.drone_icon_path = os.path.join(os.path.dirname(__file__), "images", "online.png")
-        self.drone_icon_image = ImageTk.PhotoImage(Image.open(self.drone_icon_path).resize((64, 64)))
+        self.drone_online_path = os.path.join(os.path.dirname(__file__), "images", "online.png")
+        self.drone_online_image = ImageTk.PhotoImage(Image.open(self.drone_online_path).resize((64, 64)))
+
+        self.drone_offline_path = os.path.join(os.path.dirname(__file__), "images", "offline.png")
+        self.drone_offline_image = ImageTk.PhotoImage(Image.open(self.drone_offline_path).resize((64, 64)))
 
         self.logo_label = customtkinter.CTkLabel(master=self.frame_left, text="", image=self.logo_image)
         self.logo_label.grid(pady=(20, 20), padx=(20, 20), row=0, column=0, sticky="n")
@@ -134,21 +140,63 @@ class App(customtkinter.CTk):
                                                       text_color="#1f6aa5", font=("Helvetica", 16, "bold"))
         self.copyright_label.grid(row=0, column=2, padx=(20, 20), pady=(5, 5), sticky="e")
 
-        # Set Map default values
+        # ============ Set Map default values
         self.map_widget.set_address("Abu Dhabi")
         #self.map_option_menu.set("Google satellite")
         #self.appearance_mode_optionemenu.set("Dark")
 
-        # Load and place drone markers
-        self.place_drone_markers()
+        # ============ Load initial markers from drones.json ============
+        self.load_initial_markers()
 
-    def place_drone_markers(self):
+        # ============ MQTT Connection ============
+        mqtt.connect_mqtt(self)
+        # ============Start periodic update
+        #self.start_periodic_update()
+
+    def load_initial_markers(self):
         drones = self.load_drones()
         for drone in drones:
-            lat = drone['lat']
-            lon = drone['long']
-            marker = self.map_widget.set_marker(lat, lon, text=drone['drone_id'], icon=self.drone_icon_image)
-            self.marker_list.append(marker)
+            self.add_drone_marker(drone['drone_id'], drone['lat'], drone['long'], drone['bat'], drone['lastseen'])
+
+    def add_drone_marker(self, drone_id, lat, long, bat, lastseen):
+        marker_image = self.get_drone_image(lastseen)
+        marker = self.map_widget.set_marker(lat, long, text=f"{drone_id} ({bat})", icon=marker_image)
+        self.marker_list[drone_id] = marker
+
+    def update_drone_marker(self, drone_id, lat, long, bat, lastseen):
+        if drone_id in self.marker_list:
+            marker = self.marker_list[drone_id]
+            marker.set_position(lat, long)
+            marker.set_text(f"{drone_id} ({bat})")
+            #marker.set_image(self.get_drone_image(lastseen))
+            #marker.set_icon(self.get_drone_image(lastseen))
+        else:
+            self.add_drone_marker(drone_id, lat, long, bat, lastseen)
+
+
+    def get_drone_image(self, lastseen):
+        
+        lastseen_time = datetime.fromisoformat(lastseen.replace('Z', ''))
+        current_time = datetime.utcnow()
+
+        if current_time - lastseen_time > timedelta(minutes=10):
+            return self.drone_offline_image
+        else:
+            return self.drone_online_image
+        
+    def start_periodic_update(self):
+        def update():
+            while True:
+                self.update_all_markers()
+                time.sleep(10)
+                
+        threading.Thread(target=update, daemon=True).start()
+
+    def update_all_markers(self):
+        with open('drones.json', 'r') as file:
+            drones = json.load(file)
+            for drone in drones:
+                self.update_drone_marker(drone['drone_id'], drone['lat'], drone['long'], drone['bat'], drone['lastseen'])
 
     def load_drones(self):
         try:
@@ -236,8 +284,8 @@ class App(customtkinter.CTk):
         log.info("Configuration saved and MQTT client reconnected")
         
         # Reset MQTT connection
-        mqtt.stop_mqtt()
-        mqtt.start_mqtt()
+        mqtt.disconnect_mqtt()
+        mqtt.connect_mqtt(self)
 
         self.settings_window.destroy()
 

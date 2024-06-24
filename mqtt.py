@@ -1,12 +1,15 @@
 import paho.mqtt.client as mqtt
 import json
 import logger
+from datetime import datetime
 
 log = logger.logger
 
 # Global variables and configuration
 mqtt_client = None
 config = None
+TOPICS = []
+
 
 def load_config():
     global config
@@ -24,36 +27,68 @@ def load_config():
         }
         log.warning("Configuration file not found. Using default configuration.")
 
-def start_call():
+def load_drones():
+    global TOPICS
+    with open('drones.json', 'r') as file:
+        drones = json.load(file)
+        TOPICS = [f"{drone['drone_id']}/data" for drone in drones]
+
+def mqtt_start_call():
     global mqtt_client
     log.info("Publishing start call message...")
     mqtt_client.publish(f"{config['drone_id']}/call", "on")
 
-def end_call():
+def mqtt_end_call():
     global mqtt_client
     log.info("Publishing end call message...")
     mqtt_client.publish(f"{config['drone_id']}/call", "off")
 
-def on_connect(client, userdata, flags, rc):
-    log.info(f"Connected to MQTT broker with code {rc}.")
-    #client.subscribe(f"{config['drone_id']}/data")
 
-def on_message(client, userdata, message):
-    msg = message.payload.decode()
-    log.info(f"Received message on {message.topic}: {msg}")
+def on_message(client, userdata, msg):
+    payload = json.loads(msg.payload.decode())
+    drone_id = payload['drone_id']
+    lat = payload['lat']
+    long = payload['long']
+    bat = payload['bat']
+    lastseen = datetime.utcnow().isoformat() + 'Z'
+    # Update the drones.json file
+    with open('drones.json', 'r') as file:
+        drones = json.load(file)
+    
+    for drone in drones:
+        if drone['drone_id'] == drone_id:
+            drone['lat'] = lat
+            drone['long'] = long
+            drone['bat'] = bat
+            drone['lastseen'] = lastseen
+            break
+
+    with open('drones.json', 'w') as file:
+        json.dump(drones, file, indent=4)
+
+    if userdata and userdata['app']:
+        userdata['app'].update_drone_marker(drone_id, lat, long, bat, lastseen)
+
+def connect_mqtt(app):
+    global mqtt_client
+    load_config()
+    mqtt_client = mqtt.Client(userdata={'app': app})
+    mqtt_client.on_message = on_message
+    mqtt_client.connect(config['mqtt_broker'], int(config['mqtt_port']), 60)
+    load_drones()
+    for topic in TOPICS:
+        mqtt_client.subscribe(topic)
+    mqtt_client.loop_start()
+    log.info("MQTT client setup completed.")
+
+def disconnect_mqtt():
+    log.info("Cleaning up MQTT client...")
+    if mqtt_client:
+        mqtt_client.loop_stop()
+        mqtt_client.disconnect()
 
 def clean_exit():
     log.info("Cleaning up MQTT client...")
     if mqtt_client:
         mqtt_client.loop_stop()
         mqtt_client.disconnect()
-
-# MQTT setup
-load_config()
-mqtt_client = mqtt.Client()
-mqtt_client.on_connect = on_connect
-mqtt_client.on_message = on_message
-
-mqtt_client.connect(config['mqtt_broker'], int(config['mqtt_port']), 60)
-mqtt_client.loop_start()
-log.info("MQTT client setup completed.")

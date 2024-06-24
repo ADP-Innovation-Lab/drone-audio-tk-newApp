@@ -32,6 +32,7 @@ def open_settings():
 
 def on_closing():
     end_call()
+    mqtt.disconnect_mqtt()
     app.destroy()
 
 app = gui.App(start_call, end_call, on_closing)
