@@ -342,7 +342,6 @@ class App(customtkinter.CTk):
         log.info("End call button pressed")
         mqtt.mqtt_end_call( self.selected_drone_id)
         self.status_label.configure(text="Status: Call ended")
-        
         self.voip_end_call()
 
     def start(self):

@@ -388,3 +388,33 @@
 2024-06-24 17:13:27,885 - mqtt - INFO - Publishing start call message:drone101
 2024-06-24 17:13:28,148 - voip - INFO - Connected to server at 3.208.18.29:50007
 2024-06-24 17:13:30,218 - voip - INFO - Disconnected from server
+2024-06-24 17:16:00,939 - mqtt - INFO - Configuration loaded.
+2024-06-24 17:16:01,150 - mqtt - INFO - MQTT client setup completed.
+2024-06-24 17:16:05,377 - gui - INFO - Drone selected: drone101
+2024-06-24 17:16:19,571 - gui - INFO - Make call button pressed
+2024-06-24 17:16:19,572 - mqtt - INFO - Publishing start call message:drone101
+2024-06-24 17:16:19,809 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-24 17:16:21,935 - gui - INFO - End call button pressed
+2024-06-24 17:16:21,935 - mqtt - INFO - Publishing end call message: drone101
+2024-06-24 17:16:21,948 - voip - INFO - Disconnected from server
+2024-06-24 17:21:13,170 - mqtt - INFO - Configuration loaded.
+2024-06-24 17:21:13,384 - mqtt - INFO - MQTT client setup completed.
+2024-06-24 17:21:57,345 - mqtt - INFO - Configuration loaded.
+2024-06-24 17:21:57,555 - mqtt - INFO - MQTT client setup completed.
+2024-06-24 17:23:08,522 - gui - INFO - Drone selected: drone101
+2024-06-24 17:25:04,602 - mqtt - INFO - Configuration loaded.
+2024-06-24 17:25:04,771 - mqtt - INFO - MQTT client setup completed.
+2024-06-24 17:25:26,845 - gui - INFO - Searching for address: abu dhabi
+2024-06-24 17:25:30,029 - gui - INFO - Searching for address: abu dhabi
+2024-06-24 17:25:33,425 - gui - INFO - Opening settings window
+2024-06-24 17:25:37,022 - gui - INFO - Changing map to: OpenStreetMap
+2024-06-24 17:25:39,376 - gui - INFO - Changing map to: Google normal
+2024-06-24 17:26:44,758 - gui - INFO - Drone selected: drone101
+2024-06-24 17:26:59,991 - gui - INFO - Make call button pressed
+2024-06-24 17:26:59,993 - mqtt - INFO - Publishing start call message:drone101
+2024-06-24 17:27:00,239 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-24 17:27:05,810 - gui - INFO - End call button pressed
+2024-06-24 17:27:05,812 - mqtt - INFO - Publishing end call message: drone101
+2024-06-24 17:27:05,819 - voip - INFO - Disconnected from server
+2024-06-24 17:36:10,126 - voip - INFO - Disconnected from server
+2024-06-24 17:36:10,127 - mqtt - INFO - Cleaning up MQTT client...

@@ -42,7 +42,7 @@ try:
         simulate_north_movement()
         client.publish(publish_topic, json.dumps(msg))
         print(f"Published: {json.dumps(msg)}")
-        time.sleep(10)
+        time.sleep(5)
 except KeyboardInterrupt:
     print("Exiting...")
 
