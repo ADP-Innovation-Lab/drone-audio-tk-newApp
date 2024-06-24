@@ -23,7 +23,7 @@ class App(customtkinter.CTk):
         super().__init__(*args, **kwargs)
 
         self.start_call = start_call
-        self.end_call = end_call
+        self.voip_end_call = end_call
         self.on_closing = on_closing
 
         self.title(App.APP_NAME)
@@ -36,7 +36,7 @@ class App(customtkinter.CTk):
         self.createcommand('tk::mac::Quit', self.on_closing)
 
         self.marker_list = {}
-
+        self.selected_drone_id = None
         # ============ create two CTkFrames ============
 
         self.grid_columnconfigure(0, weight=0)
@@ -85,12 +85,12 @@ class App(customtkinter.CTk):
         self.drone_select_menu = customtkinter.CTkOptionMenu(self.frame_left, values=drone_ids, command=self.drone_select)
         self.drone_select_menu.grid(row=2, column=0, padx=(20, 20), pady=(10, 0))
 
-        self.make_call_button = customtkinter.CTkButton(master=self.frame_left, text="Make Call", fg_color="green", command=self.make_call)
+        self.make_call_button = customtkinter.CTkButton(master=self.frame_left, text="Make Call", fg_color="green", command=self.make_call_button)
         self.make_call_button.grid(pady=(20, 0), padx=(20, 20), row=3, column=0)
         self.make_call_button.bind("<Enter>", lambda e: self.show_tooltip("Make a call"))
         self.make_call_button.bind("<Leave>", lambda e: self.hide_tooltip())
 
-        self.end_call_button = customtkinter.CTkButton(master=self.frame_left, text="End Call", fg_color="red", command=self.end_call)
+        self.end_call_button = customtkinter.CTkButton(master=self.frame_left, text="End Call", fg_color="red", command=self.end_call_button)
         self.end_call_button.grid(pady=(20, 0), padx=(20, 20), row=4, column=0)
         self.end_call_button.bind("<Enter>", lambda e: self.show_tooltip("End the call"))
         self.end_call_button.bind("<Leave>", lambda e: self.hide_tooltip())
@@ -329,17 +329,21 @@ class App(customtkinter.CTk):
 
     def drone_select(self, selection):
         log.info(f"Drone selected: {selection}")
+        self.selected_drone_id = selection
         self.status_label.configure(text=f"Status: {selection} selected")
 
-    def make_call(self):
+    def make_call_button(self):
         log.info("Make call button pressed")
+        mqtt.mqtt_start_call( self.selected_drone_id)
         self.status_label.configure(text="Status: Calling...")
         self.start_call()
 
-    def end_call(self):
+    def end_call_button(self):
         log.info("End call button pressed")
+        mqtt.mqtt_end_call( self.selected_drone_id)
         self.status_label.configure(text="Status: Call ended")
-        self.end_call()
+        
+        self.voip_end_call()
 
     def start(self):
         self.mainloop()

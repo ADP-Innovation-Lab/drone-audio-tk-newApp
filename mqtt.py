@@ -33,15 +33,15 @@ def load_drones():
         drones = json.load(file)
         TOPICS = [f"{drone['drone_id']}/data" for drone in drones]
 
-def mqtt_start_call():
+def mqtt_start_call( sel_drone_id):
     global mqtt_client
-    log.info("Publishing start call message...")
-    mqtt_client.publish(f"{config['drone_id']}/call", "on")
+    log.info("Publishing start call message:"+ sel_drone_id)
+    mqtt_client.publish(f"{sel_drone_id}/call", "on")
 
-def mqtt_end_call():
+def mqtt_end_call(sel_drone_id):
     global mqtt_client
-    log.info("Publishing end call message...")
-    mqtt_client.publish(f"{config['drone_id']}/call", "off")
+    log.info("Publishing end call message: "+ sel_drone_id)
+    mqtt_client.publish(f"{sel_drone_id}/call", "off")
 
 
 def on_message(client, userdata, msg):
