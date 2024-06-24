@@ -1,0 +1,327 @@
+2024-06-20 17:20:10,847 - DroneCallSystem - WARNING - Configuration file not found. Using default configuration.
+2024-06-20 17:20:11,176 - DroneCallSystem - INFO - MQTT client setup completed.
+2024-06-20 17:20:11,202 - DroneCallSystem - INFO - Starting application...
+2024-06-20 17:20:11,464 - DroneCallSystem - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:20:12,886 - DroneCallSystem - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:20:15,351 - DroneCallSystem - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:20:19,736 - DroneCallSystem - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:20:28,266 - DroneCallSystem - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:20:49,208 - DroneCallSystem - INFO - Connected to MQTT broker with code 3.
+2024-06-20 17:21:23,320 - DroneCallSystem - INFO - Connected to MQTT broker with code 0.
+2024-06-20 17:24:39,327 - DroneCallSystem - INFO - Closing application...
+2024-06-20 17:24:39,334 - DroneCallSystem - INFO - Cleaning up MQTT client...
+2024-06-20 17:24:39,638 - DroneCallSystem - INFO - Cleaning up VoIP client...
+2024-06-20 17:24:39,639 - DroneCallSystem - INFO - Stopping VoIP client...
+2024-06-20 17:24:39,642 - DroneCallSystem - INFO - VoIP client stopped.
+2024-06-20 17:24:39,760 - DroneCallSystem - INFO - Application closed.
+2024-06-20 17:25:26,394 - mqtt - WARNING - Configuration file not found. Using default configuration.
+2024-06-20 17:25:26,624 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 17:25:26,632 - main - INFO - Starting application...
+2024-06-20 17:25:26,785 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:25:28,174 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:25:32,616 - main - INFO - Opening settings...
+2024-06-20 17:25:34,442 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:25:37,913 - gui - INFO - Make call button pressed
+2024-06-20 17:25:37,915 - main - INFO - Starting call...
+2024-06-20 17:25:37,917 - mqtt - INFO - Publishing start call message...
+2024-06-20 17:25:37,918 - voip - INFO - Starting VoIP client...
+2024-06-20 17:25:38,843 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:25:47,208 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:26:03,591 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:26:36,078 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:27:40,475 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:29:41,081 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:31:42,207 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:33:42,625 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:35:43,050 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:37:43,463 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:39:43,952 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:41:44,438 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:43:44,806 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:45:45,212 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:47:45,575 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 17:51:06,280 - mqtt - WARNING - Configuration file not found. Using default configuration.
+2024-06-20 17:51:06,511 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 17:51:06,523 - main - INFO - Starting application...
+2024-06-20 17:51:07,533 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 17:53:50,333 - mqtt - INFO - Configuration loaded.
+2024-06-20 17:53:50,542 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 17:53:50,549 - main - INFO - Starting application...
+2024-06-20 17:53:50,721 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:53:52,118 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:53:54,482 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:53:58,415 - main - INFO - Opening settings...
+2024-06-20 17:53:58,861 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:54:07,221 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:54:07,422 - main - INFO - Opening settings...
+2024-06-20 17:54:12,319 - main - INFO - Opening settings...
+2024-06-20 17:54:19,258 - main - INFO - Opening settings...
+2024-06-20 17:54:23,611 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:54:55,947 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 17:56:00,420 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:00:48,021 - gui - INFO - Searching for address: Abu Dhabi
+2024-06-20 18:01:36,140 - main - INFO - Closing application...
+2024-06-20 18:01:36,140 - mqtt - INFO - Cleaning up MQTT client...
+2024-06-20 18:01:36,906 - voip - INFO - Cleaning up VoIP client...
+2024-06-20 18:01:36,907 - voip - INFO - Stopping VoIP client...
+2024-06-20 18:01:36,907 - voip - INFO - VoIP client stopped.
+2024-06-20 18:01:37,088 - main - INFO - Application closed.
+2024-06-20 18:01:42,174 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:01:42,378 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:01:42,384 - main - INFO - Starting application...
+2024-06-20 18:01:42,610 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:02:32,953 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:02:33,221 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:02:33,228 - main - INFO - Starting application...
+2024-06-20 18:02:33,385 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:13,921 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:04:14,335 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:04:14,342 - main - INFO - Starting application...
+2024-06-20 18:04:14,507 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:25,657 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:04:25,872 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:04:25,879 - main - INFO - Starting application...
+2024-06-20 18:04:26,071 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:38,199 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:04:38,403 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:04:38,410 - main - INFO - Starting application...
+2024-06-20 18:04:38,583 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:40,416 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:42,813 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:47,175 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:04:49,415 - main - INFO - Opening settings...
+2024-06-20 18:04:55,602 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:06:24,258 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:06:24,573 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:06:24,582 - main - INFO - Starting application...
+2024-06-20 18:06:24,750 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:06:26,154 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:06:27,981 - main - INFO - Opening settings...
+2024-06-20 18:06:28,610 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:06:32,981 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:06:46,011 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 18:07:02,390 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:07:34,817 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:07:56,970 - gui - INFO - Make call button pressed
+2024-06-20 18:07:56,972 - main - INFO - Starting call...
+2024-06-20 18:07:56,972 - mqtt - INFO - Publishing start call message...
+2024-06-20 18:07:56,973 - voip - INFO - Starting VoIP client...
+2024-06-20 18:11:12,783 - main - INFO - Ending call...
+2024-06-20 18:11:12,783 - mqtt - INFO - Publishing end call message...
+2024-06-20 18:11:12,784 - voip - INFO - Stopping VoIP client...
+2024-06-20 18:11:12,785 - voip - INFO - VoIP client stopped.
+2024-06-20 18:25:19,574 - main - INFO - Closing application...
+2024-06-20 18:25:19,575 - mqtt - INFO - Cleaning up MQTT client...
+2024-06-20 18:25:20,266 - voip - INFO - Cleaning up VoIP client...
+2024-06-20 18:25:20,267 - voip - INFO - Stopping VoIP client...
+2024-06-20 18:25:20,268 - voip - INFO - VoIP client stopped.
+2024-06-20 18:25:20,412 - main - INFO - Application closed.
+2024-06-20 18:26:50,216 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:26:50,430 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:26:53,499 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:27:01,194 - gui - INFO - Make call button pressed
+2024-06-20 18:27:01,516 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-20 18:27:10,614 - voip - INFO - Disconnected from server
+2024-06-20 18:27:14,191 - voip - INFO - Disconnected from server
+2024-06-20 18:27:15,990 - gui - INFO - Drone selected: drone101
+2024-06-20 18:33:39,457 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:33:39,679 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:33:39,911 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:33:41,274 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:33:43,659 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:33:48,038 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:35:15,936 - gui - INFO - Make call button pressed
+2024-06-20 18:35:16,194 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-20 18:35:18,700 - voip - INFO - Disconnected from server
+2024-06-20 18:37:10,238 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:37:10,476 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:38:22,508 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:38:22,789 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:38:22,981 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:38:27,341 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 18:39:13,695 - voip - INFO - Disconnected from server
+2024-06-20 18:48:01,815 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:48:02,169 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:48:02,334 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:48:03,694 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:48:06,025 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:48:06,809 - gui - INFO - Opening settings window
+2024-06-20 18:48:10,344 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:48:18,723 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:48:35,097 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:49:07,579 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:50:12,092 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:52:12,493 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:53:53,020 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:53:53,259 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:53:53,451 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:53:54,840 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:53:56,949 - gui - INFO - Opening settings window
+2024-06-20 18:53:57,214 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:54:01,589 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:54:14,745 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 18:54:35,848 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 18:55:12,724 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 18:56:17,124 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:58:17,491 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:58:58,237 - mqtt - INFO - Configuration loaded.
+2024-06-20 18:58:59,015 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 18:59:03,803 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 18:59:05,183 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:59:07,595 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:59:12,011 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 18:59:15,244 - voip - INFO - Disconnected from server
+2024-06-20 19:00:04,641 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:00:05,014 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:00:05,214 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:00:07,263 - gui - INFO - Opening settings window
+2024-06-20 19:00:20,448 - voip - INFO - Disconnected from server
+2024-06-20 19:01:07,327 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:01:07,711 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:01:07,917 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:01:09,502 - gui - INFO - Opening settings window
+2024-06-20 19:02:25,613 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:02:25,828 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:02:25,998 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:02:27,352 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:02:27,743 - gui - INFO - Opening settings window
+2024-06-20 19:02:29,962 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:02:32,151 - voip - INFO - Disconnected from server
+2024-06-20 19:03:03,103 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:03:03,319 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:03:03,503 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:03:04,887 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:03:06,211 - gui - INFO - Opening settings window
+2024-06-20 19:03:07,241 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:03:11,929 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:03:20,286 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:03:21,915 - voip - INFO - Disconnected from server
+2024-06-20 19:04:08,915 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:04:09,138 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:04:12,060 - gui - INFO - Opening settings window
+2024-06-20 19:04:14,673 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 19:04:16,078 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:04:20,462 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:04:22,061 - gui - INFO - Changing appearance mode to: Dark
+2024-06-20 19:04:24,824 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:06:45,959 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:06:46,187 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:06:46,363 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:06:47,988 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:06:48,634 - gui - INFO - Opening settings window
+2024-06-20 19:07:11,206 - voip - INFO - Disconnected from server
+2024-06-20 19:07:21,787 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:07:22,041 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:07:22,203 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:07:23,615 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:07:24,399 - gui - INFO - Opening settings window
+2024-06-20 19:07:41,695 - voip - INFO - Disconnected from server
+2024-06-20 19:19:52,900 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:19:53,118 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:20:40,060 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:20:40,272 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:20:40,438 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:31:44,783 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:31:45,060 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:31:45,235 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:35:24,907 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:35:25,139 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:35:25,299 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:37:09,977 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:37:10,232 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:37:10,417 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:40:31,974 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:40:32,186 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:40:33,774 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:40:35,144 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:40:37,945 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:40:45,297 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:41:20,128 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:41:20,340 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:41:20,561 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:41:22,031 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:41:23,726 - voip - INFO - Disconnected from server
+2024-06-20 19:43:29,779 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:43:30,002 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:43:30,359 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:43:47,652 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:43:47,867 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:43:48,042 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:44:05,606 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:44:05,930 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:44:06,097 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:44:09,476 - gui - INFO - Opening settings window
+2024-06-20 19:44:12,342 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 19:44:14,066 - gui - INFO - Changing map to: Google satellite
+2024-06-20 19:44:14,734 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:44:16,290 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-06-20 19:44:19,170 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:44:27,536 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:44:38,361 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-06-20 19:44:43,899 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:44:54,064 - gui - INFO - Opening settings window
+2024-06-20 19:47:34,901 - gui - INFO - Opening settings window
+2024-06-20 19:47:38,853 - voip - INFO - Disconnected from server
+2024-06-20 19:47:45,520 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:47:45,813 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:47:45,979 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:47:59,250 - voip - INFO - Disconnected from server
+2024-06-20 19:48:18,834 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:48:19,061 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:48:19,227 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:48:30,942 - gui - INFO - Opening settings window
+2024-06-20 19:48:34,558 - gui - INFO - Changing map to: Google satellite
+2024-06-20 19:48:46,703 - voip - INFO - Disconnected from server
+2024-06-20 19:49:10,956 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:49:11,201 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:49:16,149 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 19:50:37,765 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:50:37,983 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:50:43,374 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 19:50:44,814 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:50:45,369 - gui - INFO - Opening settings window
+2024-06-20 19:50:48,735 - gui - INFO - Changing map to: Google satellite
+2024-06-20 19:51:01,455 - voip - INFO - Disconnected from server
+2024-06-20 19:51:20,530 - mqtt - INFO - Configuration loaded.
+2024-06-20 19:51:20,767 - mqtt - INFO - MQTT client setup completed.
+2024-06-20 19:51:20,931 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:51:22,295 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:51:24,647 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:51:29,042 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:51:37,452 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 19:51:53,941 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:52:25,388 - gui - INFO - Opening settings window
+2024-06-20 19:52:30,446 - gui - INFO - Opening settings window
+2024-06-20 19:52:36,169 - gui - INFO - Opening settings window
+2024-06-20 19:52:41,908 - gui - INFO - Opening settings window
+2024-06-20 19:54:09,527 - gui - INFO - Drone selected: drone202
+2024-06-20 19:54:11,980 - gui - INFO - Drone selected: drone203
+2024-06-20 19:54:13,491 - gui - INFO - Drone selected: drone101
+2024-06-20 19:54:23,229 - gui - INFO - Make call button pressed
+2024-06-20 19:54:23,475 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-20 19:54:26,780 - voip - INFO - Disconnected from server
+2024-06-20 19:54:30,561 - voip - INFO - Disconnected from server
+2024-06-20 19:55:20,842 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 19:56:10,718 - gui - INFO - Drone selected: drone202
+2024-06-20 19:56:11,881 - gui - INFO - Drone selected: drone203
+2024-06-20 19:56:16,145 - gui - INFO - Make call button pressed
+2024-06-20 19:56:16,491 - voip - INFO - Connected to server at 3.208.18.29:50007
+2024-06-20 19:56:19,948 - gui - INFO - Opening settings window
+2024-06-20 19:56:27,016 - gui - INFO - Changing map to: Google satellite
+2024-06-20 19:56:33,368 - gui - INFO - Changing map to: Google normal
+2024-06-20 19:56:39,923 - gui - INFO - Changing map to: OpenStreetMap
+2024-06-20 19:56:44,245 - gui - INFO - Changing map to: Google normal
+2024-06-20 19:56:46,489 - gui - INFO - Changing appearance mode to: Dark
+2024-06-20 19:57:03,318 - gui - INFO - Searching for address: dubai
+2024-06-20 19:57:12,110 - gui - INFO - Searching for address: dubai
+2024-06-20 19:57:28,429 - gui - INFO - Searching for address: abu dhabi
+2024-06-20 20:00:05,389 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 20:00:37,767 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 20:01:46,532 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 20:03:51,912 - mqtt - INFO - Connected to MQTT broker with code 3.
+2024-06-20 20:05:54,823 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-20 20:06:03,203 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 20:06:13,187 - mqtt - INFO - Connected to MQTT broker with code 5.
+2024-06-20 20:06:29,761 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-21 01:19:02,494 - mqtt - INFO - Connected to MQTT broker with code 0.
+2024-06-21 07:23:18,323 - mqtt - INFO - Connected to MQTT broker with code 0.

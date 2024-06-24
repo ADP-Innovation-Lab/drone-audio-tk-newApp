@@ -1,0 +1,6 @@
+{
+    "server_ip": "3.208.18.29",
+    "server_port": "50007",
+    "mqtt_broker": "broker.hivemq.com",
+    "mqtt_port": "1883"
+}
