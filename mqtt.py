@@ -52,6 +52,7 @@ def on_message(client, userdata, msg):
     bat = payload['bat']
     lastseen = datetime.utcnow().isoformat() + 'Z'
     # Update the drones.json file
+
     with open('drones.json', 'r') as file:
         drones = json.load(file)
     

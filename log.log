@@ -418,3 +418,60 @@
 2024-06-24 17:27:05,819 - voip - INFO - Disconnected from server
 2024-06-24 17:36:10,126 - voip - INFO - Disconnected from server
 2024-06-24 17:36:10,127 - mqtt - INFO - Cleaning up MQTT client...
+2024-06-25 10:33:47,955 - mqtt - INFO - Configuration loaded.
+2024-06-25 10:33:48,089 - mqtt - INFO - MQTT client setup completed.
+2024-06-25 10:34:03,051 - gui - INFO - Drone selected: drone202
+2024-06-25 10:34:04,591 - gui - INFO - Drone selected: drone101
+2024-06-25 10:34:05,353 - gui - INFO - Opening settings window
+2024-06-25 10:34:07,441 - gui - INFO - Changing map to: Google normal
+2024-06-25 10:39:09,173 - gui - INFO - Searching for address: abu dhabi
+2024-06-25 10:39:23,320 - gui - INFO - Opening settings window
+2024-06-25 10:39:27,307 - gui - INFO - Changing map to: OpenStreetMap
+2024-06-25 10:39:29,561 - gui - INFO - Searching for address: abu dhabi
+2024-06-25 10:39:34,720 - voip - INFO - Disconnected from server
+2024-06-25 10:39:34,720 - mqtt - INFO - Cleaning up MQTT client...
+2024-06-25 10:39:38,358 - mqtt - INFO - Configuration loaded.
+2024-06-25 10:39:38,493 - mqtt - INFO - MQTT client setup completed.
+2024-06-25 10:39:51,756 - gui - INFO - Searching for address: Abu Dhabi
+2024-06-25 10:40:02,831 - gui - INFO - Opening settings window
+2024-06-25 10:40:08,366 - gui - INFO - Changing map to: Google normal
+2024-06-25 10:40:10,053 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-06-25 10:40:10,053 - mqtt - INFO - Cleaning up MQTT client...
+2024-06-25 10:40:10,831 - mqtt - INFO - Configuration loaded.
+2024-06-25 10:40:10,967 - mqtt - INFO - MQTT client setup completed.
+2024-06-25 10:40:15,052 - gui - INFO - Searching for address: Abu Dhabi
+2024-06-25 11:31:32,585 - gui - INFO - Opening settings window
+2024-06-26 09:15:46,871 - voip - INFO - Disconnected from server
+2024-06-26 09:15:46,873 - mqtt - INFO - Cleaning up MQTT client...
+2024-07-01 10:01:00,891 - mqtt - INFO - Configuration loaded.
+2024-07-01 10:01:01,021 - mqtt - INFO - MQTT client setup completed.
+2024-07-01 10:01:57,235 - gui - INFO - Drone selected: drone101
+2024-07-01 10:02:05,172 - gui - INFO - Opening settings window
+2024-07-01 10:02:15,638 - gui - INFO - Changing appearance mode to: Dark
+2024-07-01 10:02:28,690 - gui - INFO - Changing map to: Google satellite
+2024-07-01 10:02:38,766 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-07-01 10:02:38,767 - mqtt - INFO - Cleaning up MQTT client...
+2024-07-01 10:02:39,530 - mqtt - INFO - Configuration loaded.
+2024-07-01 10:02:39,666 - mqtt - INFO - MQTT client setup completed.
+2024-07-01 10:03:53,078 - gui - INFO - Opening settings window
+2024-07-01 10:03:55,643 - gui - INFO - Changing map to: OpenStreetMap
+2024-07-01 10:03:57,015 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-07-01 10:03:57,016 - mqtt - INFO - Cleaning up MQTT client...
+2024-07-01 10:03:57,123 - mqtt - INFO - Configuration loaded.
+2024-07-01 10:03:57,391 - mqtt - INFO - MQTT client setup completed.
+2024-07-01 10:59:19,482 - mqtt - INFO - Configuration loaded.
+2024-07-01 10:59:19,617 - mqtt - INFO - MQTT client setup completed.
+2024-07-29 09:54:33,692 - mqtt - INFO - Configuration loaded.
+2024-07-29 09:54:33,964 - mqtt - INFO - MQTT client setup completed.
+2024-07-29 09:54:42,937 - gui - INFO - Opening settings window
+2024-07-29 09:54:46,360 - gui - INFO - Changing map to: Google normal
+2024-07-29 09:54:51,151 - gui - INFO - Configuration saved and MQTT client reconnected
+2024-07-29 09:54:51,151 - mqtt - INFO - Cleaning up MQTT client...
+2024-07-29 09:54:51,295 - mqtt - INFO - Configuration loaded.
+2024-07-29 09:54:51,440 - mqtt - INFO - MQTT client setup completed.
+2024-07-29 09:55:04,817 - gui - INFO - Searching for address: abu dhabi
+2024-07-29 09:55:07,825 - gui - INFO - Searching for address: abu dhabi
+2024-07-29 09:55:24,561 - gui - INFO - Drone selected: drone101
+2024-07-29 09:55:39,003 - gui - INFO - Opening settings window
+2024-08-05 13:28:05,751 - mqtt - INFO - Configuration loaded.
+2024-08-05 13:28:05,886 - mqtt - INFO - MQTT client setup completed.
